@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc",
+    "build": "npm run build --prefix ../../packages/shared && tsc",
     "start": "node dist/index.js",
     "test:unit": "vitest run",
     "test:e2e": "vitest run"
